@@ -30,28 +30,32 @@
       "unique": true
     },
     "wholesalePrice": {
-      "type": "decimal"
+      "type": "float",
+      "required": true
     },
     "retailPrice": {
-      "type": "decimal"
+      "type": "float",
+      "required": true
     },
     "isActive": {
       "type": "boolean",
       "required": true
     },
-    "urlProduct": {
+    "uidProduct": {
       "type": "uid",
-      "targetField": "productName"
+      "targetField": "productName",
+      "required": true
     },
-    "productPhotos": {
+    "productPhoto": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "categories": {
       "type": "relation",
