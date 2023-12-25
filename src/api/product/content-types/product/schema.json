@@ -44,7 +44,7 @@
     "uidProduct": {
       "type": "uid",
       "targetField": "productName",
-      "required": true
+      "required": false
     },
     "productPhoto": {
       "type": "media",
