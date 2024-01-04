@@ -22,7 +22,7 @@
       "required": true
     },
     "productDescription": {
-      "type": "string"
+      "type": "text"
     },
     "productCode": {
       "type": "string",
@@ -43,8 +43,8 @@
     },
     "uidProduct": {
       "type": "uid",
-      "targetField": "productName",
-      "required": false
+      "required": false,
+      "targetField": "productName"
     },
     "productPhoto": {
       "type": "media",
@@ -62,6 +62,10 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "products"
+    },
+    "closedBox": {
+      "type": "integer",
+      "required": true
     }
   }
 }
