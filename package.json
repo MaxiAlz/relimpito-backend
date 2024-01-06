@@ -10,11 +10,11 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "^4.13.6",
-    "@strapi/plugin-users-permissions": "^4.13.6",
+    "@strapi/plugin-i18n": "4.7.0",
+    "@strapi/plugin-users-permissions": "4.7.0",
     "@strapi/provider-upload-cloudinary": "^4.13.1",
     "@strapi/provider-upload-local": "^4.14.4",
-    "@strapi/strapi": "^4.13.6",
+    "@strapi/strapi": "4.7.0", 
     "better-sqlite3": "7.4.6",
     "pg": "^8.11.3"
   },

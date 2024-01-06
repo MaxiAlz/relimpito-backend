@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_billing_detail_details",
+  "info": {
+    "displayName": "details"
+  },
+  "options": {},
+  "attributes": {
+    "cuit": {
+      "type": "integer"
+    },
+    "socialRazon": {
+      "type": "string"
+    },
+    "fiscalCondition": {
+      "type": "string"
+    }
+  }
+}

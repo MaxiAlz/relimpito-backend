@@ -71,16 +71,20 @@
     "lastName": {
       "type": "string"
     },
-    "adress": {
-      "type": "string"
-    },
     "phoneNumber": {
       "type": "biginteger"
     },
-    "userAdress": {
-      "type": "component",
-      "repeatable": false,
-      "component": "adress.adress"
+    "adresses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::adress.adress",
+      "mappedBy": "user"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "user"
     }
   }
 }
