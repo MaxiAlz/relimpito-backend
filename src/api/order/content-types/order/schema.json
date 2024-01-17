@@ -42,6 +42,11 @@
     },
     "productPricesTotal": {
       "type": "float"
+    },
+    "adress": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::adress.adress"
     }
   }
 }
